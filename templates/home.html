@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="hero">
+    <h1>Hello, I am <span class="highlight">{{ student_name }}</span></h1>
+    <p class="subtitle">Welcome to my Python & Flask Portfolio Website</p>
+    <div class="date-badge">Today's Date: {{ today_date }}</div>
+    <div class="hero-actions">
+        <a href="/about" class="btn">Learn More About Me</a>
+        <a href="/fifa" class="btn btn-outline">Explore FIFA</a>
+    </div>
+</div>
+{% endblock %}

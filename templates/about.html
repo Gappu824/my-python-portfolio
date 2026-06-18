@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="split-layout">
+    <div class="image-section">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Subhav Mittal" class="profile-img">
+    </div>
+    <div class="text-section">
+        <h2>About Me</h2>
+        <p>My name is Subhav Mittal. I study in Grade 10-A at Euro International School. I enjoy learning new things, exploring technology, and diving into the world of sports and gaming.</p>
+        
+        <div class="stats-card">
+            <h3>My Details</h3>
+            <ul>
+                <li><strong>School:</strong> Euro International School</li>
+                <li><strong>Class:</strong> 10-A</li>
+                <li><strong>Roll Number:</strong> 33</li>
+                <li><strong>Favourite Subject:</strong> Computer Science</li>
+                <li><strong>Dream Career:</strong> Exploring my options!</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

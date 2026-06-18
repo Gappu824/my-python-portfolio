@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>My Hobbies & Interests</h2>
+<p>Here are some of the things I love doing in my free time:</p>
+
+<div class="grid-container">
+    {% for hobby in hobbies %}
+    <div class="card">
+        <h3>{{ hobby }}</h3>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

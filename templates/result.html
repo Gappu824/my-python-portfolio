@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="center-text">
+    <h2>Quiz Results</h2>
+    <div class="score-display">
+        <h1>{{ score }} / {{ total }}</h1>
+    </div>
+    
+    {% if score == 3 %}
+        <p class="success-text">Perfect score! Excellent Python knowledge.</p>
+    {% elif score == 2 %}
+        <p class="warning-text">Great job! You almost had a perfect score.</p>
+    {% else %}
+        <p class="error-text">Keep practicing! Review your Python notes and try again.</p>
+    {% endif %}
+    
+    <br>
+    <a href="/quiz" class="btn">Try Again</a>
+</div>
+{% endblock %}

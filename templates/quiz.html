@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Python Knowledge Quiz</h2>
+<p>Test your coding knowledge below:</p>
+
+<form action="/result" method="post" class="custom-form">
+    
+    <div class="form-group">
+        <p><strong>1. Who created Python?</strong></p>
+        <label><input type="radio" name="q1" value="Guido van Rossum" required> Guido van Rossum</label><br>
+        <label><input type="radio" name="q1" value="Dennis Ritchie"> Dennis Ritchie</label><br>
+        <label><input type="radio" name="q1" value="James Gosling"> James Gosling</label>
+    </div>
+
+    <div class="form-group">
+        <p><strong>2. Which symbol is used to write comments in Python?</strong></p>
+        <label><input type="radio" name="q2" value="#" required> # (Hash)</label><br>
+        <label><input type="radio" name="q2" value="//"> // (Double Slash)</label><br>
+        <label><input type="radio" name="q2" value="/*"> /* */ (Asterisk)</label>
+    </div>
+
+    <div class="form-group">
+        <p><strong>3. Which keyword is used to create a function in Python?</strong></p>
+        <label><input type="radio" name="q3" value="def" required> def</label><br>
+        <label><input type="radio" name="q3" value="function"> function</label><br>
+        <label><input type="radio" name="q3" value="create"> create</label>
+    </div>
+
+    <button type="submit" class="btn">Submit Answers</button>
+
+</form>
+{% endblock %}

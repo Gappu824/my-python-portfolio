@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhav Mittal | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">SM.</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/hobbies">Hobbies</a>
+            <a href="/fifa">FIFA Zone</a>
+            <a href="/facts">Fun Facts</a>
+            <a href="/quiz">Quiz</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container fade-in">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>Created by Subhav Mittal | Grade 10-A | Euro International School</p>
+    </footer>
+
+</body>
+</html>
